@@ -1,4 +1,4 @@
-# MAIN PROJECT OF AMICH
+# MAIN OF AMICH-UI PROJECT
 
 # by C'mon inc.
-This template is Official webview application.
+Official template webview application.

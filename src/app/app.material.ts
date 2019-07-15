@@ -2,9 +2,6 @@ import 'hammerjs';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-
 import {
 	MatCommonModule,
 	MatAutocompleteModule,
@@ -85,9 +82,7 @@ import {
 	MatTabsModule,
 	MatToolbarModule,
 	MatTooltipModule,
-	MatTreeModule,
-	AppRoutingModule,
-	NoopAnimationsModule
+	MatTreeModule
   ],
 exports: [ BrowserModule,
     	MatCommonModule,
@@ -130,4 +125,4 @@ exports: [ BrowserModule,
 	MatTreeModule
 ],
 })
-export class MaterialModule { }
+export class AppModule { }

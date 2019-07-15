@@ -34,10 +34,7 @@
             ],
             "styles": [
               {
-                "input": "src/theme/variables.scss",
-                "input": "src/global.scss",
-                "input": "src/app/app.scss",
-		"input": "./node_modules/@getbase/base/scss/index.scss"
+                "input": "./node_modules/@getbase/base/scss/index.scss"
               },
               "./node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
               "./node_modules/@getbase/base/index.css"
@@ -190,6 +187,41 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "interface": {
+      "root": "projects/interface",
+      "sourceRoot": "projects/interface/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/interface/tsconfig.lib.json",
+            "project": "projects/interface/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/interface/src/test.ts",
+            "tsConfig": "projects/interface/tsconfig.spec.json",
+            "karmaConfig": "projects/interface/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/interface/tsconfig.lib.json",
+              "projects/interface/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]

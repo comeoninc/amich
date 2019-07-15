@@ -1,2 +1,3 @@
-# C'mon Template
- Official C'mon inc. webview application
+# PROJECT AMICH-UI
+# C'mon inc.
+This template is Official webview application.

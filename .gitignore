@@ -23,6 +23,8 @@ public/
 .versions/
 coverage/
 www/
+_pages/
+_public/
 node_modules/
 tmp/
 temp/

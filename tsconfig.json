@@ -1,8 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "baseUrl": "",
+    "outDir": "public/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "module": "esnext",
@@ -20,10 +20,10 @@
     ],
     "paths": {
       "interface": [
-        "dist/interface"
+        "public/interface"
       ],
       "interface/*": [
-        "dist/interface/*"
+        "public/interface/*"
       ]
     }
   }

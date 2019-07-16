@@ -1,5 +1,5 @@
 {
-  "$schema": "./node_modules/@angular-devkit/core/src/workspace/workspace-schema.json",
+  "$schema": "node_modules/@angular-devkit/core/src/workspace/workspace-schema.json",
   "version": 1,
   "defaultProject": "app",
   "newProjectRoot": "projects",
@@ -14,7 +14,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "_app",
+            "outputPath": "public",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,20 +27,21 @@
               },
               {
                 "glob": "**/*.svg",
-                "input": "./node_modules/ionicons/dist/ionicons/svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
               },
               "src/manifest.json"
             ],
             "styles": [
               {
-                "input": "./node_modules/@getbase/base/scss/index.scss"
+                "input": "node_modules/@getbase/base/scss/index.scss"
               },
-              "./node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
-              "./node_modules/@getbase/base/index.css"
+              "src/assets/css/main.css",
+	      "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "node_modules/@getbase/base/index.css"
             ],
             "scripts": [
-              "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"
             ],
             "es5BrowserSupport": true
           },
@@ -54,7 +55,7 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
               "aot": true,

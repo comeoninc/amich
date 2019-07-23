@@ -4,8 +4,8 @@
 
 # แฟ้มผลงานต้นแบบ จากโครงการย่อย
 - https://github.com/comeoninc/heaven นิ่มนวล angular (ปรับปรุง)
-- https://github.com/comeoninc/aurora คมกริบ angular (สมบูรณ์)
-- https://github.com/comeoninc/chronos รวดเร็ว angular (สมบูรณ์)
+- https://github.com/comeoninc/aurora คมกริบ aurolia (สมบูรณ์)
+- https://github.com/comeoninc/chronos รวดเร็ว nestjs (สมบูรณ์)
 - https://github.com/comeoninc/xeno เข้มแข็ง angular (พัฒนา)
 
 # แฟ้มผลงานต้นแบบ เพื่อการพัฒนาต่อไป
